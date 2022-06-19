@@ -160,7 +160,9 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
+body{
+    background-color: #111;
+}
 
 /* home section styling */
 .home{
@@ -214,7 +216,11 @@ section .title::after{
 }
 
 /* about section styling */
+.about h2, p, .text{
+    color: #fff;
+}
 .about .title::after{
+    background: #111;
     content: "who i am";
 }
 .about .about-content .left{
@@ -263,7 +269,11 @@ section .title::after{
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.teams .title::before,
+.about .title::before,
+.skills .title::before,
+.contact .title::before
+{
     background: #fff;
 }
 .services .title::after,
@@ -308,7 +318,12 @@ section .title::after{
 
 /* skills section styling */
 
+.skills h2, .info{
+    color: #fff;
+}
+
 .skills .title::after{
+    background: #111;
     content: "what i know";
 }
 .skills .skills-content .column{
@@ -449,7 +464,12 @@ section .title::after{
 
 
 /* contact section styling */
+.contact .title, p, .text{
+    color: #fff;
+}
+
 .contact .title::after{
+    background: #111;
     content: "get in touch";
 }
 .contact .contact-content .column{
@@ -482,7 +502,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #f1f1f1;
 }
 .contact .right form .fields{
     display: flex;
@@ -504,7 +524,8 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid #555;
+    background-color: #222;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -545,7 +566,7 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: crimson;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -586,7 +607,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
